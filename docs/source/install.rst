@@ -42,6 +42,9 @@ Add the actions to your site::
     site.add_action(actions.mass_update)
     site.add_action(actions.graph_queryset)
     site.add_action(actions.export_as_csv)
-    site.add_action(actions.export_as_json)
+
+    # For older versions use
+    # site.add_action(actions.export_as_json)
+    site.add_action(actions.export_as_fixture)
 
 
